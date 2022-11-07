@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="headingContainer">
+            <h1 class="heading">Gesture Web App</h1>
+            <span class="headingEmoji">&#128076;</span>
+            <span class="headingEmoji">&#9996;</span>
+            <span class="headingEmoji">&#128077;</span>
+        </div>
+        <h2 class="subHeading">Take a selfie to know about it's meaning</h2>
+        <h3>On the following the model is trained - </h3>
+        <h2>&#128076; | &#9996; | &#128077;</h2>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <h2>Webcam View - </h2>
+            <div id="cameraContainer"></div>
+            <br><br>
+            <button onclick="captureImage();" class="mainButton">Capture Image</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <h2>Prediction</h2>
+            <h3>Prediction 1</h3>
+            <p class="emotionResult" id="emotionResult1"></p>
+            <p class="emojiResult" id="emojiResult1"></p>
+            <h3>Prediction 2</h3>
+            <p class="emotionResult" id="emotionResult2"></p>
+            <p class="emojiResult" id="emojiResult2"></p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <h2>Snapshot - </h2>
+            <div id="imageContainer"></div>
+            <br><br>
+            <button onclick="check();" class="mainButton">Predict Emotion</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
